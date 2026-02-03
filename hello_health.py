@@ -31,6 +31,7 @@ Hello {their name}, welcome to your health tracker!
 
 """
 Generating ID which is the same everytime for the same name
+Using hashlib.sha256(name.encode()).hexdigest()
 """
 
 patient_id = hashlib.sha256(name.encode()).hexdigest()
@@ -68,7 +69,7 @@ than 36, it also gives a warning.
 logger.info(f"Processing patient: {patient_id}")
 
 try:
-    temp = float(input("Enter temp: "))
+    temp: float = float(input("Enter temp: "))
 
     if temp > 39:
         logger.critical(f"Dangerously high: {temp}°C")
