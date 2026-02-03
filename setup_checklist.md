@@ -8,9 +8,9 @@ Repository initialized with Git OK
 
 README.md file created with proper instructions OK
 
-hello_health.py runs without errors USED LOGGER AND PRINT
+hello_health.py runs without errors OK, USED LOGGER AND PRINT
 
-.gitignore created COMPLETE
+.gitignore created OK
 
 Code pushed to GitHub main branch OK
 
