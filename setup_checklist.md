@@ -2,7 +2,7 @@ Setup Checklist - Obligation 1:
 
 Python 3.10+ installed (version: 3.13.11) OK
 
-Virtual environment created (folder: venv/) OK
+Virtual environment created (folder: .venv/) OK
 
 Repository initialized with Git OK
 

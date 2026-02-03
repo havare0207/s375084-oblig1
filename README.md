@@ -20,9 +20,10 @@ Installation Instructions:
 2. Creating a virtual environment:
 
 - Use the command python3 -m venv .venv to create a virtual environment.
-   - Current python version is 3, that is why you write python3
+   - Python 3 is used to ensure compatibility with systems that also have Python 2 installed.
 
-- It will create the virtual environment, and a folder named venv/
+
+- It will create the virtual environment, and a folder named .venv/
 
 
 3. Activating the virtual environment:
@@ -38,7 +39,8 @@ Installation Instructions:
     - write python hello_health.py in the terminal
     - or use the Run Python File button in the top right corner in the hello_health.py file
 
-- You experience slow start of the program?:
+
+- Experiencing slow startup?:
 
    - The program may start slightly slower the first time it is executed.
 

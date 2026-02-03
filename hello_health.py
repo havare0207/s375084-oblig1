@@ -4,13 +4,13 @@ import sys
 
 # Configure logging
 logging.basicConfig(
-level=logging.DEBUG,
-format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    level=logging.DEBUG,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
 logger.debug("Starting application")
 logger.info("Patient must write their name")
-logger.warning("If temperature is above 38°C, you have a fever")
+logger.info("Fever threshold is set to 38°C")
 
 """
 Greet the person when he/she/they arrives.
@@ -41,23 +41,29 @@ print (f"Hello {name}, welcome to your health tracker!")
 print (f"Your ID is {patient_id}...")
 
 """
-Ask the patient if they want to continue.
-The patient answer y/Y, the program continue.
-The patient answer n/N, the program stops. 
+Make def ask_continue: 
+- Ask the patient if they want to continue.
+- The patient answer y/Y, the program continue.
+- The patient answer n/N, the program stops. 
+   - "Thanks for using our DEMO! The program will now stop..."
 """
-while True:
-    proceed: str = input ("Do you want to continue using the health tracker? (y/n) ").lower()
 
-    if proceed == "y":
-        print("Continuing...")
-        break
+def ask_continue():
 
-    elif proceed == "n":
-        print("Thanks for using our DEMO! The program will no stop...")
-        sys.exit()
+    while True:
+        proceed = input("Do you want to continue using the health tracker? (y/n) ").lower()
 
-    else:
-        print("Please type y or n")
+        if proceed == "y":
+            print("Continuing...")
+            break
+        elif proceed == "n":
+            print("Thanks for using our DEMO! The program will now stop...")
+            sys.exit()
+        else:
+            print("Please type y or n")
+
+
+ask_continue()
 
 """
 Register the temperature of the patient as a variable temp,
@@ -75,7 +81,7 @@ try:
         logger.critical(f"Dangerously high: {temp}°C")
     elif temp >= 38:
         logger.warning(f"Fever detected: {temp}°C")
-    elif temp <= 36: 
+    elif temp < 36: 
         logger.warning(f"Colder than normal: {temp}°C")
     else:
         logger.info(f"Normal temp: {temp}°C")
@@ -84,18 +90,11 @@ except ValueError:
     logger.error("Invalid temperature input")
 
 
-while True:
-    proceed: str = input ("Do you want to continue using the health tracker? (y/n) ").lower()
+"""Calls ask_continue... """
 
-    if proceed == "y":
-        print("Sorry, but that was all we have until now... " \
-        "Thanks for using our DEMO! " \
-        "The program will now stop...")
-        sys.exit()
+ask_continue()
 
-    elif proceed == "n":
-        print("Thanks for using our DEMO! The program will now stop...")
-        sys.exit()
+"""End of DEMO message"""
 
-    else:
-        print("Please type y or n")
+print ("This concludes the demo version of the application! " \
+"Thank you for testing the program! ")
