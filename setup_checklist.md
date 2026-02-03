@@ -12,7 +12,7 @@ hello_health.py runs without errors MIGHT USE LOGGER INSTEAD
 
 .gitignore created COMPLETE
 
-Code pushed to GitHub main branch TO BE DONE
+Code pushed to GitHub main branch OK, MUST BE DONE BEFORE DELIVERING TOO
 
 
 Verification Commands Run
