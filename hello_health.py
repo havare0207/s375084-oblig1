@@ -10,9 +10,7 @@ format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 logger = logging.getLogger(__name__)
 logger.debug("Starting application")
 logger.info("Patient must write their name")
-logger.warning("Temperature above 38°C")
-logger.error("Database connection failed")
-
+logger.warning("If temperature is above 38°C, you have a fever")
 
 """
 Greet the person when he/she/they arrives.
