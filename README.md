@@ -13,9 +13,9 @@ Installation Instructions:
 
 1. Cloning the repository:
 
-- git clone <repository-url>
+- git clone repository-url
 
-- cd <repository-folder>
+- cd repository-folder
 
 2. Creating a virtual environment:
 
