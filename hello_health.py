@@ -45,6 +45,7 @@ Make def ask_continue:
 - Ask the patient if they want to continue.
 - The patient answer y/Y, the program continue.
 - The patient answer n/N, the program stops. 
+   - Using sys.exit()
    - "Thanks for using our DEMO! The program will now stop..."
 """
 
