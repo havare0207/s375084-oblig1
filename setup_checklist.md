@@ -6,13 +6,13 @@ Virtual environment created (folder: venv/) OK
 
 Repository initialized with Git OK
 
-README.md file created with proper instructions TO BE DONE
+README.md file created with proper instructions OK
 
-hello_health.py runs without errors MIGHT USE LOGGER INSTEAD
+hello_health.py runs without errors USED LOGGER AND PRINT
 
 .gitignore created COMPLETE
 
-Code pushed to GitHub main branch OK, MUST BE DONE BEFORE DELIVERING TOO
+Code pushed to GitHub main branch OK
 
 
 Verification Commands Run

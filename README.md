@@ -2,27 +2,59 @@ Hello Health App
 
 Description:
 
-2 to 3 sentences explaining what the project is and why it exists.
+- This project is a simple health tracker demo that collects a patient’s name and temperature while generating a unique ID for identification. 
 
-Installation Instructions
-Numbered, step-by-step instructions covering:
+- It uses input validation and logging to simulate how healthcare systems monitor patient data. 
 
-1. Cloning the repository
+- The project exists to demonstrate basic Python concepts such as user input, error handling, loops, hashing, and logging.
 
-2. Creating a virtual environment
 
-3. Activating the virtual environment
+Installation Instructions:
 
-4. Running the application
+1. Cloning the repository:
+
+- git clone <repository-url>
+
+- cd <repository-folder>
+
+2. Creating a virtual environment:
+
+- Use the command python3 -m venv .venv to create a virtual environment.
+   - Current python version is 3, that is why you write python3
+
+- It will create the virtual environment, and a folder named venv/
+
+
+3. Activating the virtual environment:
+
+- Windows: .\.venv\Scripts\Activate
+
+- Mac/Linux: source .venv/bin/activate
+
+
+4. Running the application:
+
+- To run the application, either:
+    - write python hello_health.py in the terminal
+    - or use the Run Python File button in the top right corner in the hello_health.py file
+
+- You experience slow start of the program?:
+
+   - The program may start slightly slower the first time it is executed.
+
+   - This happens because the terminal and Python environment need to initialize.
+
+   - Subsequent runs will usually be faster.
+
+   - The first run may take approximately 5 seconds depending on the system.
 
 
 Requirements:
 
 - Python 3.13.11 or higher
 
-- No external dependencies for Obligation 1
+- No external dependencies (Obligation 1)
 
 
 Author:
-
 Håvard Elgsaas
