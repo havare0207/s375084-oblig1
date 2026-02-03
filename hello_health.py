@@ -71,9 +71,9 @@ logger.info(f"Processing patient: {patient_id}")
 try:
     temp: float = float(input("Enter temp: "))
 
-    if temp > 39:
+    if temp >= 39:
         logger.critical(f"Dangerously high: {temp}°C")
-    elif temp > 38:
+    elif temp >= 38:
         logger.warning(f"Fever detected: {temp}°C")
     elif temp <= 36: 
         logger.warning(f"Colder than normal: {temp}°C")
